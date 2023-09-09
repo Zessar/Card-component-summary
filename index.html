@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="section__left">
+      <h2 class="header__h2">Your Result</h2>
+      <div class="header__result">
+        <h2 id="resultado" class="result__h2">00</h2>
+        <p class="result__p">of 100</p>
+      </div>
+      <h2 class="down__h2">great</h2>
+      <p class="down__p">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section id="result" class="section__right">
+      <div class="right__visibility">
+        <h2 class="summary__h2">summary</h2>
+        <div class="container summary__reaction">
+          <img class="summary__img" src="/assets/images/icon-reaction.svg" alt="">
+          <h3 class="reaction__h3">reaction</h3>
+          <input class="input__borde" type="text" id="input1" placeholder="00" minlength="1" maxlength="2">
+          <p class="number__p">/ 100</p>
+        </div>       
+        <div class="container summary__memory">
+          <img class="summary__img" src="/assets/images/icon-memory.svg" alt="">
+          <h3 class="memory__h3">memory</h3>
+          <input class="input__borde" type="text" id="input2" placeholder="00" minlength="1" maxlength="2">
+          <p class="number__p">/ 100</p>
+        </div>
+        <div class="container summary__verbal">
+          <img class="summary__img" src="/assets/images/icon-verbal.svg" alt="">
+          <h3 class="verbal__h3">verbal</h3>
+          <input class="input__borde" type="text" id="input3" placeholder="00" minlength="1" maxlength="2">
+          <p class="number__p">/ 100</p>
+        </div>
+        <div class="container summary__visual">
+          <img class="summary__img" src="/assets/images/icon-visual.svg" alt="">
+          <h3 class="visual__h3">visual</h3>
+          
+          <input class="input__borde" type="text" id="input4" placeholder="00" minlength="1" maxlength="2">
+          <p class="number__p">/ 100</p>
+        </div>
+        <button class="container summary__button" onclick="calcularMedia()">Continue</button>
+      </div>
+    </section>
+  </header>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Cesar Sequera</a>.
+  </footer>
+  <script src="/javascript/script.js"></script>
+</body>
+
+</html>

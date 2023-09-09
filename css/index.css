@@ -1,0 +1,234 @@
+/* Propiedades Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HankenGrotesk";    
+}
+
+body {
+    background: hsl(221, 100%, 96%);
+}
+
+/* Eliminar estilos innecesarios */
+
+a {
+    text-decoration: none;
+    color: hsla(256, 72%, 46%, 1);
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Añadir Fuentes exigidas */
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype'),
+         url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype'),
+         url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+/* Diseño de la carta izquierda */
+
+.header {
+    width: 750px;
+    height: 550px;
+    margin: 10% auto;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.section__left {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 375px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 3em;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.header__h2, .result__p, .down__p {
+    color: hsl(241, 100%, 89%);
+}
+
+.header__h2 {
+    padding-top: 2em;
+}
+
+.header__result {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    margin-left: calc(50% - 100px);
+    margin-top: 15%;
+    border-radius: 50%;
+    padding: 4em 0;
+    line-height: 3em;
+}
+
+.result__h2 {
+    font-size: 4.5em;
+    font-weight: 800;
+}
+
+.result__p {
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+.down__h2 {
+    font-size: 2em;
+    padding: 0.8em 0;
+}
+
+.down__p {
+    text-transform: none;
+    font-size: 18px;
+    word-spacing: 0.2em;
+}
+
+/* Diseño de la carta derecha */
+
+.section__right {
+    background: hsl(0, 0%, 100%);
+    width: 750px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 2px 8px 20px 1px rgba(111, 110, 110, 0.436);
+}
+
+.right__visibility {
+    width: 375px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2.5em 2em;
+}
+
+.summary__h2 {
+    margin-bottom: 1.5em 0;
+}
+
+.container {
+    width: 100%;
+    padding: 1em;
+    margin: 1.2em 0;
+    border-radius: 15px;
+}
+
+.summary__img, .reaction__h3, .memory__h3, .verbal__h3, .visual__h3, .number__h4, .number__p {
+    display: inline-block;
+}
+
+.reaction__h3, .memory__h3, .verbal__h3, .visual__h3 {
+    position: relative;
+    margin-left: 0.7em;
+}
+
+.input__borde, .number__p {
+    position: absolute;
+}
+
+.input__borde {
+    background-color: inherit;
+    border: none;
+    left: calc(100% - 8em);
+    width: 2em;
+    font-size: 1em;
+}
+
+.input__borde:focus {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+.number__p {
+    left: calc(100% - 6em);
+    color: hsl(240, 18%, 69%);
+}
+
+.summary__reaction {
+    background-color: hsl(0, 100%, 97%);
+    color: hsl(0, 100%, 67%);
+}
+
+.summary__memory {
+    background-color: hsl(39, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+}
+
+.summary__verbal {
+    background-color: hsl(166, 100%, 97%);
+    color: hsl(166, 100%, 37%);
+}
+
+.summary__visual {
+    background-color: hsl(234, 85%, 97%);
+    color: hsl(234, 85%, 45%);
+}
+
+.summary__button {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    margin: 1.7em 0;
+    padding: 0.7em 0;
+    border-radius: 45px;
+    font-size: 1.3em;
+    color: hsl(0, 0%, 100%);
+    scale: 1;
+    transition: color 500ms ease-in;
+}
+
+.summary__button:hover {
+    background: hsl(252, 100%, 67%);
+    scale: 1.1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+@media only screen and (max-width: 375px) {
+
+    .header {
+        position: static;
+        margin: 0;
+    }
+
+    .section__left {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .section__right {
+        width: 375px;
+        border-radius: 0 0 0 0;
+        box-shadow: none;
+    }
+
+    .right__visibility {
+        margin-top: 550px;
+        margin-bottom: 0;
+        position: static;
+    }
+}
