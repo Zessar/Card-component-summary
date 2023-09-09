@@ -14,7 +14,7 @@ Los usuarios deberían poder:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Añado la URL de la solucion](https://github.com/Zessar/Componentes-Resultados)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Mi proceso
